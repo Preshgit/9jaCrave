@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naija Crave - Discover Delicious Recipes</title>
+    <link rel="stylesheet" href="./styles/naijaCrave.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <p>Naija Crave</p>
+        <ul>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="#">Contribute</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="misc">
+          <form action="">
+            <input
+              type="search"
+              name="search"
+              id=""
+              placeholder="Search by recipes"
+            /><button>Search</button>
+          </form>
+          <a href="/login" class="login">Login</a>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="landing_page">
+        <div class="image"></div>
+        <div class="hero-content">
+          <h1>Welcome to Naija Crave</h1>
+          <p>A Community of Food Enthusiasts</p>
+          <div class="links">
+            <a href="search.html" class="btn">Search by Ingredients</a>
+            <a href="create.html" class="btn">Share Recipe</a>
+          </div>
+        </div>
+      </div>
+      <!-----
+            <section id="features" class="features">
+                <h2>Features</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <img src="images/save.jpg" alt="Save Favorites">
+                        <h3>Save Your Favorites</h3>
+                        <p>Keep track of the recipes you love for easy access later.</p>
+                    </div>
+                </div>
+            </section>
+            --->
+
+      <section id="about" class="about">
+        <h2>About Naija Crave</h2>
+        <p>
+          Naija Crave is your gateway to the rich and diverse flavors of
+          Nigerian cuisine. Our platform allows you to explore recipes, share
+          your culinary creations, and discover new favorites.
+        </p>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Feedback Form</h2>
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Naija Crave. All rights reserved.</p>
+    </footer>
+    <script src="naijaCrave.js"></script>
+  </body>
+</html>

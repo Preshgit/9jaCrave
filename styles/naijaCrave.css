@@ -1,0 +1,56 @@
+/* Reset some default browser styles
+/*body, h1, h2, h3, p, ul, li, a, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+}*/
+
+header {
+  color: black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav p {
+  margin-right: auto;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.login {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.login:hover {
+  background-color: black;
+  transition: co;
+}
+
+.misc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

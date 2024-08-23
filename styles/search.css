@@ -1,0 +1,42 @@
+/* Style for the container */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the input button */
+.btn {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+/* Style for the drop-down content */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style for each item in the drop-down */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown on focus or click */
+.btn:focus + .dropdown-content, .dropdown-container:hover .dropdown-content {
+    display: block;
+}

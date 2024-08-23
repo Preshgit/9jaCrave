@@ -1,0 +1,58 @@
+
+.recipe-card {
+    background-color: white;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-width: 300px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.difficulty {
+    text-align: right;
+    font-size: 12px;
+}
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.info-item {
+    flex: 1;
+}
+.ingredients {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.ingredient-column {
+    flex: 1;
+}
+h2 {
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+.directions {
+    margin-bottom: 20px;
+}
+.directions input[type="text"] {
+    width: 100%;
+}

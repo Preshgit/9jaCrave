@@ -1,0 +1,26 @@
+.myDiv {
+  background-color: red;
+  text-align: center;
+}
+.body {
+  background-color: white;
+  text-align: center;
+}
+.parent-body { 
+    float: left; 
+    width: 50%;
+}
+    
+.section1 {
+  background-color: #e4cb89;
+  border: 3px solid #e4cb89;
+  margin-left: 50%; 
+  height: 100px; 
+   
+}
+.section2 {
+  background-color: #7F461B;
+  border: 3px solid #7F461B;
+  margin-left: 50%; 
+  height: 100px; 
+}
