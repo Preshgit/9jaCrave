@@ -11,7 +11,7 @@ function HomePage() {
         </h1>
         <div className="text-center mt-5 raleway italic class">
           <h2 className="font-semibold text-xl">
-            Discover, Share, and Create Together
+            Discover, Share, and Create Nigerian Recipes Together
           </h2>
           <div className="w-3/4 mx-auto h-[450px] rounded-lg relative">
             {/* <img
