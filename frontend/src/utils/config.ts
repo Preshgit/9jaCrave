@@ -1,9 +1,8 @@
-import axios from 'axios'
+import axios from "axios";
 
-
-const newAxios = axios.create({
+export const newAxios = axios.create({
   baseURL: "",
   headers: {
-    'Content-Type': 'application/json'
-  }
-})
+    "Content-Type": "application/json",
+  },
+});
