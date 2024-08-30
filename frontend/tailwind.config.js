@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         meditate: ["Meditate", "sans-serif"],
       },
+      screens: {
+        xxs: "300px",
+      },
     },
   },
   plugins: [require("tailwind-gradient-mask-image")],

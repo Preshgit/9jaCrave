@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
-    <header className="raleway w-[85%] rounded-lg mx-auto p-2 flex items-center  shadow-slate-300 shadow">
-      <nav className="flex items-center justify-between w-full">
+    <header className="raleway w-[85%] rounded-lg mx-auto p-2 flex items-center  bg-white shadow-slate-300 shadow">
+      <nav className="flex items-center justify-between w-full bg-white">
         <a href="#" className="text-black text-3xl font-meditate font-bold">
           Naija Crave
         </a>
@@ -55,7 +55,7 @@ function NavBar() {
           </form>
           <NavLink
             to="/login"
-            className="bg-black  p-2 text-white hover:text-white rounded-lg"
+            className="bg-[#173513]  p-2 text-white hover:text-white rounded-lg"
           >
             Login
           </NavLink>

@@ -4,3 +4,10 @@
  * and many more.
  *
  */
+
+export interface exploreDiv {
+  text: string;
+  image: string;
+  link: string;
+  linkName: string;
+}

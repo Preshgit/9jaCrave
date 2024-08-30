@@ -142,11 +142,20 @@
   .meshWhite {
     background-color: #ffffff;
     background-image: linear-gradient(
+      25deg,
+      #ffffff 0%,
+      #ffffff 50%,
+      #f7ce68 100%
+    );
+  }
+  /* .meshWhiteTwo {
+    background-color: #ffffff;
+    background-image: linear-gradient(
       257deg,
       #ffffff 0%,
-      #ffdee9 4%,
+      #fce41175 0%,
       #ffffff 44%,
       #ffffff 83%
     );
-  }
+  } */
 }
