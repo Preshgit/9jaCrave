@@ -1,50 +1,53 @@
 import { NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 function NavBar() {
   return (
     <header className="raleway w-[85%] rounded-lg mx-auto p-2 flex items-center  bg-white shadow-slate-300 shadow">
       <nav className="flex items-center justify-between w-full bg-white">
-        <a href="#" className="text-black text-3xl font-meditate font-bold">
+        <NavLink to="/" className="text-black text-3xl font-meditate font-bold">
           Naija Crave
-        </a>
+        </NavLink>
         <ul className="flex gap-10 items-center text-black lato-400">
           <NavLink
             to="#"
-            className={({ isActive }) => {
+            className={({ isActive }: { isActive: boolean }) => {
               return isActive
-                ? "text-black lato-700 text-sm"
-                : "text-black lato-400 text-sm";
+                ? "text-black lato-700 text-sm hover:text-gray-600"
+                : "text-black lato-400 text-sm hover:text-gray-600";
             }}
           >
             Explore Dishes
           </NavLink>
           <NavLink
-            to="#"
+            to="/share-recipe"
             className={({ isActive }) => {
               return isActive
-                ? "text-black lato-700 text-sm"
-                : "text-black lato-400 text-sm";
+                ? "text-black lato-700 text-sm hover:text-gray-500 duration-200 transition-colors"
+                : "text-black lato-400 text-sm hover:text-gray-500 duration-200 transition-colors";
             }}
           >
             Share Recipe
           </NavLink>
-          <NavLink
-            to="#"
-            className={({ isActive }) => {
+          <NavHashLink
+            smooth
+            to="/#about"
+            className={({ isActive }: { isActive: boolean }) => {
               return isActive
-                ? "text-black lato-700 text-sm"
-                : "text-black lato-400 text-sm";
+                ? "text-black lato-700 text-sm hover:text-gray-500 duration-200 transition-colors"
+                : "text-black lato-400 text-sm hover:text-gray-500 duration-200 transition-colors";
             }}
+            // activeStyle="text-black lato-700 text-sm"
           >
             About
-          </NavLink>
+          </NavHashLink>
         </ul>
         <div className="flex gap-3 items-center">
           <form className="flex items-center gap-3 relative">
             <input
               type="text"
               placeholder="Search for recipe"
-              className="p-2  rounded-lg border relative"
+              className="p-2  rounded-lg border relative bg-white"
             />
             <button className="bg-transparent absolute right-0 border-none hover:border-none">
               <img

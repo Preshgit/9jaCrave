@@ -1,6 +1,7 @@
 import "./output.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/homepage/homepage";
+import ShareRecipe from "./pages/shareRecipe";
 
 const router = createBrowserRouter([
   {
@@ -10,6 +11,10 @@ const router = createBrowserRouter([
   {
     path: "",
     element: <HomePage />,
+  },
+  {
+    path: "/share-recipe",
+    element: <ShareRecipe />,
   },
 ]);
 

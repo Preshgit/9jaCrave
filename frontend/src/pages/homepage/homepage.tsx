@@ -56,7 +56,7 @@ function HomePage() {
         </div>
         <p></p>
       </div>
-      <div className="mt-0">
+      <div className="mt-0 bg-white text-black" id="about">
         <h2 className="text-center text-6xl poppins-semibold text-gray-700 mb-10 mt-5">
           Become a Flavor Explorer
         </h2>
@@ -101,7 +101,7 @@ function HomePage() {
           linkName={explorer?.linkName || ""}
         />
       </div>
-      <div className="flex flex-col mb-10 p-5  relative">
+      <div className="flex flex-col mb-10 p-5  relative bg-white text-black">
         <h3 className="poppins-semibold text-3xl text-center">
           What People Have To say
         </h3>
