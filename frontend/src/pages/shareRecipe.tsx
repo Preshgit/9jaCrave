@@ -3,17 +3,20 @@ import MyTipTap from "../components/tiptap";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState, useRef } from "react";
 import { get } from "http";
+import axios from 'axios';
 
 interface recipeData {
-  title: string;
-  ingredients: string;
-  content: string;
+  recipe_name: string;
+  ingredients: string | string[];
+  directions: string;
 }
 
 export interface tiptapData {
   status: boolean;
   getContent: () => string;
 }
+
+
 
 function ShareRecipe() {
   const {
@@ -32,7 +35,22 @@ function ShareRecipe() {
 
   const submitRecipe: SubmitHandler<recipeData> = async (data) => {
     const content = getTipTapData();
-    console.log(data, content);
+    data.directions = content;
+    data.ingredients = data.ingredients.split(",")
+    console.log(data);
+    try {
+	    let response = await axios.post(`${import.meta.env.VITE_URL}/api/recipes`,JSON.stringify(data), {
+		    headers: {
+			    'Content-Type': 'application/json'
+		    }
+	    })
+	    if (response.status === 201) {
+		    alert("Recipe successfully shared");
+		    window.location.reload()
+	    }
+    } catch(err: any) {
+	    alert("An error occurred")
+    }
   };
 
   return (
@@ -48,7 +66,7 @@ function ShareRecipe() {
             <label>
               <p className="text-black">Recipe Name</p>
               <input
-                {...register("title", {
+                {...register("recipe_name", {
                   required: "Recipe name is required",
                 })}
                 type="text"
